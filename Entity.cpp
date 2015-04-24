@@ -1,5 +1,7 @@
 #include "Entity.h"
 
+#include <math.h>
+
 Entity::~Entity()
 {
 	delete this->sprite;
@@ -18,8 +20,8 @@ void Entity::flipY(bool flip)
 
 COORD Entity::center()
 {
-	int centerX = (int)(width() / 2 + x);
-	int centerY = (int)(height() / 2 + y);
+	int centerX = ceil(width() / 2 + x);
+	int centerY = ceil(height() / 2 + y);
 
 	return { centerX, centerY };
 }

@@ -32,7 +32,7 @@ bool Farmer::ufoOnSight()
 	COORD ufoCoords = monitor.getPlayerCenter();
 
 	int px = ufoCoords.X;
-	int ex = x + (flippedX ? 1 : -1);
+	int ex = center().X +(flippedX ? 1 : -1);
 
 	return (flippedX ? px < ex : px > ex) && !monitor.isPlayerHidden();
 }
