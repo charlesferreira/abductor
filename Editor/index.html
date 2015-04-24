@@ -1,0 +1,92 @@
+<!doctype html>
+<html ng-app="generatorApp">
+<head>
+<title>Sprite Generator for Abductor :: by Charles Ferreira</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="./angular-hotkeys.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <div class="container-fluid" ng-controller="generatorController as generator">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>
+                    Sprite Generator for Abdutor
+                </h2>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Resolution</div>
+                            <div class="panel-body">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label class="control-label sr-only">Screen width:</label>
+                                        <input ng-change="generator.updateGrid()" ng-model="generator.screenWidth" value="{{generator.screenWidth}}" class="form-control" type="text" size="2" maxlength="2" placeholder="Width" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label sr-only">Screen height:</label>
+                                        <input ng-change="generator.updateGrid()" ng-model="generator.screenHeight" value="{{generator.screenWidth}}" class="form-control" type="text" size="2" maxlength="2" placeholder="Height" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Painter</div>
+                            <div class="panel-body">
+                                <form class="form-inline" ng-submit="generator.painter.paint()">
+                                    <div class="form-group">
+                                        <label class="control-label sr-only">Row:</label>
+                                        <input ng-model="generator.painter.y" ng-keyup="generator.setPaintTarget()" value="{{generator.painter.y}}" class="form-control" type="text" size="2" maxlength="2" placeholder="Row" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label sr-only">Column:</label>
+                                        <input ng-model="generator.painter.x" ng-keyup="generator.setPaintTarget()" value="{{generator.painter.x}}" class="form-control" type="text" size="2" maxlength="2" placeholder="Column" />
+                                    </div>
+                                    <div class="form-group" ng-model="generator.painter.pixel">
+                                        <textarea class="pixel form-control fg-{{generator.painter.pixel.fgColor}} bg-{{generator.painter.pixel.bgColor}} char-{{generator.painter.pixel.value}}" rows="3" cols="3" ng-click="" pixel-container>{{generator.painter.pixel.value}}&#10;{{generator.painter.pixel.fgColor}}&#10;{{generator.painter.pixel.bgColor}}</textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Paint</button>
+                                    <button type="button" class="btn btn-danger" ng-click="generator.painter.paintAll()">Paint all</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Compiled</div>
+                            <div class="panel-body">
+                                <form class="form-inline" ng-submit="generator.compile()">
+                                    <button type="submit" class="btn btn-default">Generate</button>
+                                    <button type="button" class="btn btn-default" ng-click="generator.sprite=''">Hide</button>
+                                    <button type="button" class="btn btn-default" ng-click="generator.import()">Import</button>
+                                </form>
+                            </div>
+                            <div class="panel-footer" ng-show="generator.sprite">
+                                <textarea cols="{{generator.screenWidth}}" rows="{{generator.screenHeight}}" class="form-control" id="compiled-sprite" onclick="this.focus(); this.select();">{{generator.sprite}}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+
+                <table class="grid">
+                    <tr ng-repeat="row in generator.grid">
+                        <td ng-repeat="pixel in row" ng-model="pixel" class="fg-{{pixel.fgColor}} bg-{{pixel.bgColor}} char-{{pixel.value}} paint-target-{{pixel.isPaintTarget}}">
+                            <textarea rows="3" cols="3" ng-click="generator.setPaintTarget(pixel)" pixel-container>{{pixel.value}}&#10;{{pixel.fgColor}}&#10;{{pixel.bgColor}}</textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
