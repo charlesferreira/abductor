@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Animals">
+      <UniqueIdentifier>{16ecb1aa-36c6-4f5a-9878-74e02bb03e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Behaviors">
+      <UniqueIdentifier>{89921312-f3de-4597-97ae-ee8fc832a485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Enemy">
+      <UniqueIdentifier>{6aa6246a-e2e8-4e76-8ba4-74b054a2e6d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scenes">
+      <UniqueIdentifier>{22ce168c-9dad-461d-b03f-1158a8086e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{d53c8517-fa11-4805-b80c-9048224d7d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets">
+      <UniqueIdentifier>{ea9e7e78-ffc5-430c-aec4-6914ff806b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Sprites">
+      <UniqueIdentifier>{2050b00c-0574-4a3a-a5ff-b35b1e4c4df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Sprites\Scenes">
+      <UniqueIdentifier>{f95d8f38-e352-467d-877f-d9418472081d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Sprites\Player">
+      <UniqueIdentifier>{28a981d7-bc3e-4d41-ac61-18de8f0d7899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Sprites\Animals">
+      <UniqueIdentifier>{65cde1df-4a47-4d5c-9c2e-c9463b690ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Sprites\Enemy">
+      <UniqueIdentifier>{8cd213da-1b72-4f2a-9a26-866526c160c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Sprites\Scenes\Clouds">
+      <UniqueIdentifier>{1cdd2726-8eb9-45ba-922f-35bf651f1571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{0fb5f611-81ff-44d7-86c3-e58e00afa849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animals">
+      <UniqueIdentifier>{14937b92-3514-4919-8569-94e969bdfb23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Behaviors">
+      <UniqueIdentifier>{7276485c-d450-41c9-9541-5fd6009de37e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enemy">
+      <UniqueIdentifier>{25a2795b-676a-4a31-bc7e-6bb9bf9a6d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{29b029a6-d70f-4aa2-bea1-64d36901cc41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{e038afe9-a7ea-4954-9412-c93ee3950637}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Abductor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardObserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pixel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Animal.cpp">
+      <Filter>Source Files\Animals</Filter>
+    </ClCompile>
+    <ClCompile Include="Animals.cpp">
+      <Filter>Source Files\Animals</Filter>
+    </ClCompile>
+    <ClCompile Include="Chick.cpp">
+      <Filter>Source Files\Animals</Filter>
+    </ClCompile>
+    <ClCompile Include="Cow.cpp">
+      <Filter>Source Files\Animals</Filter>
+    </ClCompile>
+    <ClCompile Include="Pig.cpp">
+      <Filter>Source Files\Animals</Filter>
+    </ClCompile>
+    <ClCompile Include="Behaves.cpp">
+      <Filter>Source Files\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Behavior.cpp">
+      <Filter>Source Files\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="BlinkBehavior.cpp">
+      <Filter>Source Files\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="IdleBehavior.cpp">
+      <Filter>Source Files\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="RoamBehavior.cpp">
+      <Filter>Source Files\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Farmer.cpp">
+      <Filter>Source Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Ship.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TractorBeam.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Cloud.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOver.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Introduction.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage_01.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="StartingScreen.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TextRibbon.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeWriter.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMonitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardObserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pixel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pig.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Cow.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Chick.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Animals.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Animal.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Behavior.h">
+      <Filter>Header Files\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaves.h">
+      <Filter>Header Files\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="BlinkBehavior.h">
+      <Filter>Header Files\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="IdleBehavior.h">
+      <Filter>Header Files\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="RoamBehavior.h">
+      <Filter>Header Files\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Farmer.h">
+      <Filter>Header Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloud.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOver.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Introduction.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage_01.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="StartingScreen.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeWriter.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRibbon.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Ship.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="TractorBeam.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\Lore.txt">
+      <Filter>Resource Files\Assets\Sprites</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Animals\Chick.txt">
+      <Filter>Resource Files\Assets\Sprites\Animals</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Animals\Cow.txt">
+      <Filter>Resource Files\Assets\Sprites\Animals</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Animals\Pig.txt">
+      <Filter>Resource Files\Assets\Sprites\Animals</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Enemy\Farmer.txt">
+      <Filter>Resource Files\Assets\Sprites\Enemy</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Player\Ship.txt">
+      <Filter>Resource Files\Assets\Sprites\Player</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Player\TractorBeam.txt">
+      <Filter>Resource Files\Assets\Sprites\Player</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\GameOver.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\Introduction.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\Stage_01.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\StartingScreen.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud1.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes\Clouds</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud2.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes\Clouds</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud3.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes\Clouds</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud4.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes\Clouds</Filter>
+    </Text>
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud0.txt">
+      <Filter>Resource Files\Assets\Sprites\Scenes\Clouds</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Editor\angular-hotkeys.js">
+      <Filter>Editor</Filter>
+    </None>
+    <None Include="Editor\app.js">
+      <Filter>Editor</Filter>
+    </None>
+    <None Include="Editor\index.html">
+      <Filter>Editor</Filter>
+    </None>
+    <None Include="Editor\style.css">
+      <Filter>Editor</Filter>
+    </None>
+  </ItemGroup>
+</Project>

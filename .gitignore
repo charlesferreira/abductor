@@ -2,7 +2,4 @@ Debug/
 Release/
 *.opensdf
 *.sdf
-*.sln
-*.vcxproj
-*.filters
 *.suo

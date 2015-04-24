@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{65531D0B-004A-4799-A440-F0FC2B48D502}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Abductor</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)Assets" "$(TargetDir)Assets\" /E /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)Assets" "$(TargetDir)Assets\" /E /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Abductor.cpp" />
+    <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="Animals.cpp" />
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="Behaves.cpp" />
+    <ClCompile Include="Behavior.cpp" />
+    <ClCompile Include="BlinkBehavior.cpp" />
+    <ClCompile Include="Chick.cpp" />
+    <ClCompile Include="Cloud.cpp" />
+    <ClCompile Include="ConsoleBuffer.cpp" />
+    <ClCompile Include="Cow.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Farmer.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameMonitor.cpp" />
+    <ClCompile Include="GameOver.cpp" />
+    <ClCompile Include="IdleBehavior.cpp" />
+    <ClCompile Include="Introduction.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="KeyboardObserver.cpp" />
+    <ClCompile Include="Pig.cpp" />
+    <ClCompile Include="Pixel.cpp" />
+    <ClCompile Include="RoamBehavior.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteManager.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="Stage_01.cpp" />
+    <ClCompile Include="StartingScreen.cpp" />
+    <ClCompile Include="TextRibbon.cpp" />
+    <ClCompile Include="TractorBeam.cpp" />
+    <ClCompile Include="TypeWriter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="Animals.h" />
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="Behaves.h" />
+    <ClInclude Include="Behavior.h" />
+    <ClInclude Include="BlinkBehavior.h" />
+    <ClInclude Include="Chick.h" />
+    <ClInclude Include="Cloud.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="ConsoleBuffer.h" />
+    <ClInclude Include="Cow.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Farmer.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameMonitor.h" />
+    <ClInclude Include="GameOver.h" />
+    <ClInclude Include="IdleBehavior.h" />
+    <ClInclude Include="Introduction.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="KeyboardObserver.h" />
+    <ClInclude Include="Pig.h" />
+    <ClInclude Include="Pixel.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RoamBehavior.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Ship.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteManager.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="Stage_01.h" />
+    <ClInclude Include="StartingScreen.h" />
+    <ClInclude Include="TextRibbon.h" />
+    <ClInclude Include="TractorBeam.h" />
+    <ClInclude Include="TypeWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\Lore.txt" />
+    <Text Include="Assets\Sprites\Animals\Chick.txt" />
+    <Text Include="Assets\Sprites\Animals\Cow.txt" />
+    <Text Include="Assets\Sprites\Animals\Pig.txt" />
+    <Text Include="Assets\Sprites\Enemy\Farmer.txt" />
+    <Text Include="Assets\Sprites\Player\Ship.txt" />
+    <Text Include="Assets\Sprites\Player\TractorBeam.txt" />
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud0.txt" />
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud1.txt" />
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud2.txt" />
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud3.txt" />
+    <Text Include="Assets\Sprites\Scenes\Clouds\Cloud4.txt" />
+    <Text Include="Assets\Sprites\Scenes\GameOver.txt" />
+    <Text Include="Assets\Sprites\Scenes\Introduction.txt" />
+    <Text Include="Assets\Sprites\Scenes\Stage_01.txt" />
+    <Text Include="Assets\Sprites\Scenes\StartingScreen.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Editor\angular-hotkeys.js" />
+    <None Include="Editor\app.js" />
+    <None Include="Editor\index.html" />
+    <None Include="Editor\style.css" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
