@@ -18,10 +18,10 @@ TypeWriter::TypeWriter(int x, int y, std::string filename, int fgColor, int bgCo
 	unsigned int height = text.size();
 	unsigned int width = 0;
 	for (std::vector<std::string>::iterator it = text.begin(); it != text.end(); ++it) {
-		if ((*it).length() > width)
-			width = (*it).length();
+		if ((*it).size() >= width)
+			width = (*it).size() + 1;
 	}
-
+	
 	// creates empty sprite
 	SpriteManager& spriteManager = SpriteManager::getInstance();
 	sprite = spriteManager.empty(width, height);
@@ -30,7 +30,7 @@ TypeWriter::TypeWriter(int x, int y, std::string filename, int fgColor, int bgCo
 	textSprite = spriteManager.fill(width, height, ' ', fgColor, bgColor);
 	for (unsigned int i = 0; i < height; i++) {
 		for (unsigned int j = 0; j < width; j++) {
-			if (j == text[i].length()) break;
+			if (j >= text[i].length()) break;
 			char value = text[i][j];
 			textSprite->map[i][j].value = value;
 		}
