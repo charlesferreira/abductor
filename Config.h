@@ -53,7 +53,7 @@
 #define STAGE_CLOUDS_BASE_SPEED    (int) 12
 #define STAGE_CLOUDS_STARTING_NUM  (int) 3
 #define STAGE_CLOUDS_POS_Y		   (int) 3
-#define STAGE_HANGING_TIME         (int) 1250 // time the stage stands still after player's death
+#define STAGE_HANGING_TIME         (int) 1500 // time the stage stands still after player's death
 
 // misc
 #define ANIMATION_BASE_INTERVAL    (int) 10000
